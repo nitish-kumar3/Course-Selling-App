@@ -34,12 +34,13 @@ function Signup() {
           },
         }
       );
-      console.log("Sugnup successful: ", response.data);
+      console.log("Signup successful: ", response.data);
       toast.success(response.data.message);
       navigate("/login");
     } catch (error) {
       if (error.response) {
         setErrorMessage(error.response.data.errors || "Signup failed!!!");
+        toast.error(error.response.data.message);  //check it if show error message
       }
     }
   };

@@ -36,6 +36,7 @@ function Login() {
     } catch (error) {
       if (error.response) {
         setErrorMessage(error.response.data.errors || "Login failed!!!");
+        toast.error(error.response.data.message); // Show error message from the server
       }
     }
   };

@@ -68,6 +68,7 @@ function CourseCreate() {
         <div className="max-w-4xl mx-auto p-6 border  rounded-lg shadow-lg">
           <h3 className="text-2xl font-semibold mb-8">Create Course</h3>
 
+
           <form onSubmit={handleCreateCourse} className="space-y-6">
             <div className="space-y-2">
               <label className="block text-lg">Title</label>
