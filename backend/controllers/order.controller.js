@@ -1,6 +1,7 @@
 import { Order } from "../models/order.model.js";
 import { Purchase } from "../models/purchase.model.js";
 
+
 export const orderData = async (req, res) => {
   const order = req.body;
   try {
