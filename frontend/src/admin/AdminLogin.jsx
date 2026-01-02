@@ -10,7 +10,7 @@ function AdminLogin() {
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-  
+
   const navigate = useNavigate();
   
   const handleSubmit = async (e) => {
