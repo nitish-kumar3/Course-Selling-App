@@ -6,7 +6,6 @@ import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import { BACKEND_URL } from "../utils/utils";
 
 
-
 function Buy() {
   const { courseId } = useParams();
   const [loading, setLoading] = useState(false);
